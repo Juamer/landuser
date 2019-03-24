@@ -1,0 +1,24 @@
+{
+  "name": "landuser",
+  "version": "1.0.0",
+  "description": "Landing Page",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peranghx/landuser.git"
+  },
+  "author": "Angel Hurtado (@peranghx)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peranghx/landuser/issues"
+  },
+  "homepage": "https://github.com/peranghx/landuser#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  }
+}
