@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="es" ng-app="landuser">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Landing Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
-<body>
+<body ng-controller="Propietario as C">
     <!-- Navbar -->
     <nav class="navbar sticky-top navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1">UTZAC</span>
@@ -17,23 +17,17 @@
     <!-- Jumbotron -->
     <div class="jumbotron">
         <h1 class="display-4">Proyectos</h1>
-        <p class="lead">Landing Page de</p>
+        <p class="lead">Landing Page de {{ propietario.nombre }}</p>
     </div>
     <!-- Contenido -->
     <div class="container">
         <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action active">
-                Cras justo odio
-            </button>
-            <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
-            <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
-            <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
-            <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+            <a ng-repeat="proyecto in proyectos" href="{{ proyecto.src }}" type="button" class="list-group-item list-group-item-action">{{ proyecto.titulo }}</a>
         </div>
     </div>
     <!-- Scripts -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/angular/angular.min.js"></script>
     <script src="./js/app.js"></script>
