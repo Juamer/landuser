@@ -4,9 +4,9 @@ var ngapp = angular.module("landuser", []);
 ngapp.controller("Propietario", function ($scope, $http) {
     // Declarar variables
     $scope.propietario = {
-        nombre: "Angel Hurtado"
+        nombre: "Juan Pablo"
     };
     $scope.proyectos = [
-        { titulo: "UTZAC-SATM", src: "http://167.99.105.41/utzac-satm-ui"}
+        { titulo: "UTZAC-VC", src: "http://167.99.105.41/utzac-vc"}
     ];
 });
